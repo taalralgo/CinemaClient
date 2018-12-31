@@ -77,6 +77,8 @@ namespace CinemaCLIENT
                         staff.Passwd = password;
                         staff.AdresseID = ((AdresseServiceReference.Adresse)AdressCbx.SelectedItem).ID;
                         staff.StoreID = ((StoreServiceReference.Store)StoreCbx.SelectedItem).ID;
+                        staff.Store.ID = staff.StoreID;
+                        staff.Adresse.ID = staff.AdresseID;
 
                         byte[] imge;
                         FileStream fs = new FileStream(imgpicture, FileMode.Open, FileAccess.Read);
