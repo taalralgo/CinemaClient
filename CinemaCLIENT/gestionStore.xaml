@@ -1,0 +1,19 @@
+﻿<Window x:Class="CinemaCLIENT.gestionStore"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CinemaCLIENT"
+        mc:Ignorable="d"
+        Title="gestionStore" Height="450" Width="800">
+    <Grid>
+        <Button Content="Enregistrer" HorizontalAlignment="Left" Margin="20,185,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Adresse" HorizontalAlignment="Left" Margin="20,81,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="AdresseCbx" HorizontalAlignment="Left" Margin="175,81,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Manager" HorizontalAlignment="Left" Margin="20,34,0,0" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="PersonnelEncadrementCbx" HorizontalAlignment="Left" Margin="175,34,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Modifier" HorizontalAlignment="Left" Margin="628,185,0,0" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.46,0.869"/>
+        <Button Content="Annuler" HorizontalAlignment="Left" Margin="345,185,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click"/>
+
+    </Grid>
+</Window>

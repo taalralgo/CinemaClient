@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="CinemaCLIENT.locationController"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CinemaCLIENT"
+             mc:Ignorable="d" 
+             Height="633" Width="932">
+    <Grid>
+        <Button Content="Enregistrer" HorizontalAlignment="Left" Margin="41,395,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Date Location" HorizontalAlignment="Left" Margin="20,32,0,0" VerticalAlignment="Top" Width="118"/>
+        <DatePicker x:Name="DateLocation" HorizontalAlignment="Left" Margin="175,30,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Staff" HorizontalAlignment="Left" Margin="20,173,0,0" VerticalAlignment="Top" Width="118"/>
+        <ComboBox x:Name="StaffCbx" HorizontalAlignment="Left" Margin="175,173,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Inventaire" HorizontalAlignment="Left" Margin="20,76,0,0" VerticalAlignment="Top" Width="118"/>
+        <ComboBox x:Name="InventaireCbx" HorizontalAlignment="Left" Margin="175,76,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Modifier" HorizontalAlignment="Left" Margin="196,395,0,0" VerticalAlignment="Top" Width="118"/>
+        <DataGrid HorizontalAlignment="Left" Height="589" Margin="366,34,0,0" VerticalAlignment="Top" Width="566"/>
+        <Label Content="Client" HorizontalAlignment="Left" Margin="20,123,0,0" VerticalAlignment="Top" Width="118"/>
+        <ComboBox x:Name="ClientCbx" HorizontalAlignment="Left" Margin="175,123,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Date Retour" HorizontalAlignment="Left" Margin="41,248,0,0" VerticalAlignment="Top" Width="118"/>
+        <DatePicker x:Name="DateRetour" HorizontalAlignment="Left" Margin="196,241,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</UserControl>

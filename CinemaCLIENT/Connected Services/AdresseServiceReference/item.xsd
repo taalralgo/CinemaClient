@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Adresse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City" nillable="true" type="tns:City" />
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="Clients" nillable="true" type="tns:ArrayOfCustomer" />
+      <xs:element minOccurs="0" name="District" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Nom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Staffs" nillable="true" type="tns:ArrayOfStaff" />
+      <xs:element minOccurs="0" name="Stores" nillable="true" type="tns:ArrayOfStore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Adresse" nillable="true" type="tns:Adresse" />
+  <xs:complexType name="City">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Country" nillable="true" type="tns:Country" />
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Nom" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="City" nillable="true" type="tns:City" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cities" nillable="true" type="tns:ArrayOfCity" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Nom" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="ArrayOfCity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="City" nillable="true" type="tns:City" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCity" nillable="true" type="tns:ArrayOfCity" />
+  <xs:complexType name="ArrayOfCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Customer" nillable="true" type="tns:Customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomer" nillable="true" type="tns:ArrayOfCustomer" />
+  <xs:complexType name="Customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Adresse" nillable="true" type="tns:Adresse" />
+      <xs:element minOccurs="0" name="AdresseID" type="xs:int" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Nom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Payments" nillable="true" type="tns:ArrayOfPayment" />
+      <xs:element minOccurs="0" name="Picture" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Prenom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rentals" nillable="true" type="tns:ArrayOfRental" />
+      <xs:element minOccurs="0" name="Store" nillable="true" type="tns:Store" />
+      <xs:element minOccurs="0" name="StoreID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Customer" nillable="true" type="tns:Customer" />
+  <xs:complexType name="ArrayOfPayment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Payment" nillable="true" type="tns:Payment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPayment" nillable="true" type="tns:ArrayOfPayment" />
+  <xs:complexType name="Payment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:int" />
+      <xs:element minOccurs="0" name="Customer" nillable="true" type="tns:Customer" />
+      <xs:element minOccurs="0" name="CustomerID" type="xs:int" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Rental" nillable="true" type="tns:Rental" />
+      <xs:element minOccurs="0" name="RentalID" type="xs:int" />
+      <xs:element minOccurs="0" name="Staff" nillable="true" type="tns:Staff" />
+      <xs:element minOccurs="0" name="StaffID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Payment" nillable="true" type="tns:Payment" />
+  <xs:complexType name="Rental">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Customer" nillable="true" type="tns:Customer" />
+      <xs:element minOccurs="0" name="CustomerID" type="xs:int" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Inventory" nillable="true" type="tns:Inventory" />
+      <xs:element minOccurs="0" name="InventoryID" type="xs:int" />
+      <xs:element minOccurs="0" name="ReturnDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Staff" nillable="true" type="tns:Staff" />
+      <xs:element minOccurs="0" name="StaffID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Rental" nillable="true" type="tns:Rental" />
+  <xs:complexType name="Inventory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Film" nillable="true" type="tns:Film" />
+      <xs:element minOccurs="0" name="FilmID" type="xs:int" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Store" nillable="true" type="tns:Store" />
+      <xs:element minOccurs="0" name="StoreID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Inventory" nillable="true" type="tns:Inventory" />
+  <xs:complexType name="Film">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Language" nillable="true" type="tns:Language" />
+      <xs:element minOccurs="0" name="LanguageID" type="xs:int" />
+      <xs:element minOccurs="0" name="Lenght" type="xs:int" />
+      <xs:element minOccurs="0" name="Release_year" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Rental" type="xs:int" />
+      <xs:element minOccurs="0" name="Rental_duration" type="xs:int" />
+      <xs:element minOccurs="0" name="Rental_rate" type="xs:int" />
+      <xs:element minOccurs="0" name="Stores" nillable="true" type="tns:ArrayOfStore" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Film" nillable="true" type="tns:Film" />
+  <xs:complexType name="Language">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Films" nillable="true" type="tns:ArrayOfFilm" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Language" nillable="true" type="tns:Language" />
+  <xs:complexType name="ArrayOfFilm">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Film" nillable="true" type="tns:Film" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFilm" nillable="true" type="tns:ArrayOfFilm" />
+  <xs:complexType name="ArrayOfStore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Store" nillable="true" type="tns:Store" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStore" nillable="true" type="tns:ArrayOfStore" />
+  <xs:complexType name="Store">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Adresse" nillable="true" type="tns:Adresse" />
+      <xs:element minOccurs="0" name="AdresseID" type="xs:int" />
+      <xs:element minOccurs="0" name="Clients" nillable="true" type="tns:ArrayOfCustomer" />
+      <xs:element minOccurs="0" name="Films" nillable="true" type="tns:ArrayOfFilm" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Staffs" nillable="true" type="tns:ArrayOfStaff" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Store" nillable="true" type="tns:Store" />
+  <xs:complexType name="ArrayOfStaff">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Staff" nillable="true" type="tns:Staff" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStaff" nillable="true" type="tns:ArrayOfStaff" />
+  <xs:complexType name="Staff">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Adresse" nillable="true" type="tns:Adresse" />
+      <xs:element minOccurs="0" name="AdresseID" type="xs:int" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Nom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Passwd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Payments" nillable="true" type="tns:ArrayOfPayment" />
+      <xs:element minOccurs="0" name="Picture" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Prenom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rentals" nillable="true" type="tns:ArrayOfRental" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Store" nillable="true" type="tns:Store" />
+      <xs:element minOccurs="0" name="StoreID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Staff" nillable="true" type="tns:Staff" />
+  <xs:complexType name="ArrayOfRental">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rental" nillable="true" type="tns:Rental" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRental" nillable="true" type="tns:ArrayOfRental" />
+  <xs:complexType name="ArrayOfAdresse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Adresse" nillable="true" type="tns:Adresse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAdresse" nillable="true" type="tns:ArrayOfAdresse" />
+</xs:schema>

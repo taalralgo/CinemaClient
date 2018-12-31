@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="CinemaCLIENT.StoreControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CinemaCLIENT"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" Height="542.675" Width="879.936">
+    <Grid HorizontalAlignment="Left" Height="68.455" VerticalAlignment="Top" Width="875.714" Background="#FF000064" RenderTransformOrigin="0.508,3.033">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="599*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="GESTION STORE" Grid.Column="1" HorizontalAlignment="Left" Height="59" Margin="56,0,0,0" VerticalAlignment="Top" Width="331" FontSize="36" Grid.RowSpan="2" RenderTransformOrigin="0.527,-0.173" Background="{x:Null}" Foreground="#DDFFFFFF"/>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="241" Margin="4,99,0,-306" Grid.Row="1" VerticalAlignment="Top" Width="626">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="399*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid Height="231" VerticalAlignment="Top" Background="#FF2CA9B6" Margin="0,10,0,0" RenderTransformOrigin="0.674,0.602" HorizontalAlignment="Left" Width="626" Grid.ColumnSpan="2"/>
+        </Grid>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="49.546" Margin="3.792,44.229,0,-59.547" Grid.Row="1" VerticalAlignment="Top" Width="558.385">
+            <TextBox x:Name="recherche" HorizontalAlignment="Center" Height="34.546" Margin="189.583,10,0,5" TextWrapping="Wrap" VerticalAlignment="Center" Width="368.802"/>
+            <Button HorizontalAlignment="Left" Height="34.546" Margin="10,10,0,0" VerticalAlignment="Top" Width="117.728">
+                <materialDesign:PackIcon Kind="Search" Height="24.546" Width="34.806" RenderTransformOrigin="-0.113,0.371"/>
+            </Button>
+        </Grid>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="97" Margin="4,345,0,-408" Grid.Row="1" VerticalAlignment="Top" Width="845">
+            <Button Content="GERER" Height="43" Margin="356,29,322,0" VerticalAlignment="Top" Click="Button_Click"/>
+        </Grid>
+
+    </Grid>
+</UserControl>

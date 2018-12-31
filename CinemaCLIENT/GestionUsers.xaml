@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="CinemaCLIENT.GestionUsers" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CinemaCLIENT"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" Height="633" Width="932">
+    <Grid HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="996" Background="#FF000064" RenderTransformOrigin="0.508,3.033">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="599*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="GESTION USER" Grid.Column="1" HorizontalAlignment="Left" Height="59" Margin="56,0,0,0" VerticalAlignment="Top" Width="331" FontSize="36" Grid.RowSpan="2" RenderTransformOrigin="0.527,-0.173" Background="{x:Null}" Foreground="#DDFFFFFF"/>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="241" Margin="4,99,0,-306" Grid.Row="1" VerticalAlignment="Top" Width="646">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="399*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid ItemsSource="{Binding DataSource}" Name="tableau"  HorizontalAlignment="Left" Height="231" VerticalAlignment="Top" Width="641" Background="#FF2CA9B6" Margin="0,10,0,0" AutoGenerateColumns="False" Grid.ColumnSpan="2">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Nom}" ClipboardContentBinding="{x:Null}" Header="NOM" Width="*" CanUserReorder="False"/>
+                    <DataGridTextColumn Binding="{Binding Prenom}" ClipboardContentBinding="{x:Null}" Header="PRENOM" Width="*" CanUserReorder="False"/>
+                    <DataGridTextColumn Binding="{Binding Role}" ClipboardContentBinding="{x:Null}" Header="ROLE" Width="*" CanUserReorder="False"/>
+                    <DataGridTextColumn Binding="{Binding Email}" ClipboardContentBinding="{x:Null}" Header="EMAIL" Width="*" CanUserReorder="False"/>
+                    <DataGridTextColumn Binding="{Binding Active}" ClipboardContentBinding="{x:Null}" Header="STATUS" Width="*" CanUserReorder="False"/>
+                    <DataGridTextColumn Binding="{Binding UserName}" ClipboardContentBinding="{x:Null}" Header="USERNAME" Width="*" CanUserReorder="False"/>
+                    <DataGridTextColumn Binding="{Binding Adresse_ID}" ClipboardContentBinding="{x:Null}" Header="ADRESSE" Width="*" CanUserReorder="False"/>
+                    <DataGridTextColumn Binding="{Binding Store_ID}" ClipboardContentBinding="{x:Null}" Header="STORE" Width="*" CanUserReorder="False"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="49.546" Margin="3.792,44.229,0,-59.547" Grid.Row="1" VerticalAlignment="Top" Width="558.385">
+            <TextBox x:Name="recherche" HorizontalAlignment="Center" Height="34.546" Margin="189.583,10,0,5" TextWrapping="Wrap" VerticalAlignment="Center" Width="368.802"/>
+            <Button HorizontalAlignment="Left" Height="34.546" Margin="10,10,0,0" VerticalAlignment="Top" Width="117.728">
+                <materialDesign:PackIcon Kind="Search" Height="24.546" Width="34.806" RenderTransformOrigin="-0.113,0.371"/>
+            </Button>
+        </Grid>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="143" Margin="4,345,0,-454" Grid.Row="1" VerticalAlignment="Top" Width="646">
+            <Button Content="AJOUTER" HorizontalAlignment="Left" Height="42.595" Margin="10,29.223,0,0" VerticalAlignment="Top" Width="112.727" Click="Button_Click"/>
+            <Button Background="red" Content="BLOQUER" HorizontalAlignment="Left" Height="42.595" Margin="151.948,29.223,0,0" VerticalAlignment="Top" Width="114.936"/>
+            <Button Background="Green" Content="DEBLOQUER" HorizontalAlignment="Left" Height="43" Margin="325,29,0,0" VerticalAlignment="Top" Width="129"/>
+            <Button Content="UPDATE" HorizontalAlignment="Left" Height="43" Margin="519,29,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click_1"/>
+        </Grid>
+
+        <Grid Grid.Column="1" Height="296" Margin="448.2,44.4,68,-306" Grid.Row="1" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="279*"/>
+            </Grid.RowDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/1.png"/>
+            </Grid.Background>
+            <Image HorizontalAlignment="Left" Height="286" VerticalAlignment="Top" Width="245" Margin="0,0,-6,0" Grid.RowSpan="2"/>
+        </Grid>
+    </Grid>
+</UserControl>

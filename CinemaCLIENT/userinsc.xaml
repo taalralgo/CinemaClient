@@ -1,0 +1,50 @@
+﻿<Window x:Class="CinemaCLIENT.userinsc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CinemaCLIENT"
+        mc:Ignorable="d"
+        Title="userinsc" Height="455.085" Width="1072.033" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,-8,-21">
+        <Button x:Name="Ajouter" Background="Green" Content="Enregistrer" HorizontalAlignment="Left" Margin="41,296,0,0" VerticalAlignment="Top" Width="118" Click="Ajouter_Click"/>
+        <Label Content="Prénom" HorizontalAlignment="Left" Margin="20,22,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="PrenomTxt" HorizontalAlignment="Left" Height="23" Margin="175,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nom" HorizontalAlignment="Left" Margin="20,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
+        <TextBox x:Name="NomTxt" HorizontalAlignment="Left" Height="23" Margin="175,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Email" HorizontalAlignment="Left" Margin="20,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
+        <TextBox x:Name="EmailTxt" HorizontalAlignment="Left" Height="23" Margin="175,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Store" HorizontalAlignment="Left" Margin="331,113,0,0" VerticalAlignment="Top" Width="118"/>
+        <ComboBox x:Name="StoreCbx" HorizontalAlignment="Left" Margin="486,113,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Adresse" HorizontalAlignment="Left" Margin="20,113,0,0" VerticalAlignment="Top" Width="118"/>
+        <ComboBox x:Name="AdressCbx" HorizontalAlignment="Left" Margin="175,113,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nom d'utilisateur" HorizontalAlignment="Left" Margin="331,24,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="NomUtlilisateurTxt" HorizontalAlignment="Left" Height="23" Margin="486,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Mot de passe" HorizontalAlignment="Left" Margin="331,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="132"/>
+        <TextBox x:Name="MdpTxt" HorizontalAlignment="Left" Height="23" Margin="486,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Active" HorizontalAlignment="Left" Margin="331,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
+        <ComboBox x:Name="ActiveCbx" HorizontalAlignment="Left" Margin="486,155,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Role" HorizontalAlignment="Left" Margin="20,204,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
+        <TextBox x:Name="RoleTxt" HorizontalAlignment="Left" Height="23" Margin="175,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button  Background="red" Content="Annuler" HorizontalAlignment="Left" Margin="272,296,0,0" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.998,-1.191" Click="Button_Click"/>
+        <Grid Margin="652,34,110,192" >
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/user1.png"/>
+            </Grid.Background>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*" />
+                <ColumnDefinition Width="349*" />
+                <ColumnDefinition Width="30*" />
+            </Grid.ColumnDefinitions>
+            <Image Margin="10,26,18,10" Name="imgPhoto"
+        Stretch="Fill" Grid.Column="1" />
+            <Button Background="Green" Height="46" HorizontalAlignment="Left"
+        Margin="81,0,0,-81" x:Name="Parcourir" VerticalAlignment="Bottom"
+        Width="100" Grid.Column="1" Click="Parcourir_Click" >Parcourir</Button>
+        </Grid>
+        <TextBox x:Name="ImgPath" HorizontalAlignment="Left" Height="23" Margin="915,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+
+    </Grid>
+</Window>
