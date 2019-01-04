@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaCLIENT.ActorServiceReference;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace CinemaCLIENT
     /// </summary>
     public partial class ActeurControl1 : UserControl
     {
+        ActorServiceClient actorClient = new ActorServiceClient();
         public ActeurControl1()
         {
             InitializeComponent();
+            tableau.ItemsSource = actorClient.FindAll();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

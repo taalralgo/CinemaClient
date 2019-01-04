@@ -78,7 +78,27 @@
     <Compile Include="AjoutFilm.xaml.cs">
       <DependentUpon>AjoutFilm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ActorServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\AdresseServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\CategorieServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\FilmServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\LangueServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -220,6 +240,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Connected Services\ActorServiceReference\ActorService.wsdl" />
+    <None Include="Connected Services\ActorServiceReference\CinemaCLIENT.ActorServiceReference.Actor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ActorServiceReference\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ActorServiceReference\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ActorServiceReference\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\AdresseServiceReference\AdresseService.wsdl" />
     <None Include="Connected Services\AdresseServiceReference\CinemaCLIENT.AdresseServiceReference.Adresse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -233,6 +266,45 @@
     <None Include="Connected Services\AdresseServiceReference\item2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\CategorieServiceReference\CategoryService.wsdl" />
+    <None Include="Connected Services\CategorieServiceReference\CinemaCLIENT.CategorieServiceReference.Category.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CategorieServiceReference\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CategorieServiceReference\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CategorieServiceReference\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\FilmServiceReference1\CinemaCLIENT.FilmServiceReference1.Film.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\FilmServiceReference1\FilmService.wsdl" />
+    <None Include="Connected Services\FilmServiceReference1\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\FilmServiceReference1\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\FilmServiceReference1\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LangueServiceReference1\CinemaCLIENT.LangueServiceReference1.Language.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\LangueServiceReference1\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LangueServiceReference1\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LangueServiceReference1\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LangueServiceReference1\LanguageService.wsdl" />
     <None Include="Connected Services\StaffServiceReference\CinemaCLIENT.StaffServiceReference.Staff.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -295,6 +367,34 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\FilmServiceReference1\item.disco" />
+    <None Include="Connected Services\FilmServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\FilmServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\FilmServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\LangueServiceReference1\item.disco" />
+    <None Include="Connected Services\LangueServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\LangueServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\LangueServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\CategorieServiceReference\item.disco" />
+    <None Include="Connected Services\CategorieServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\CategorieServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\CategorieServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ActorServiceReference\item.disco" />
+    <None Include="Connected Services\ActorServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\ActorServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\ActorServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -306,7 +406,11 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ActorServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\AdresseServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\CategorieServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\FilmServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\LangueServiceReference1\" />
     <WCFMetadataStorage Include="Connected Services\StaffServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\StoreServiceReference\" />
   </ItemGroup>

@@ -1442,25 +1442,37 @@ namespace CinemaCLIENT.AdresseServiceReference {
         private int IDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Languag_origineIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private CinemaCLIENT.AdresseServiceReference.Language LanguageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int LanguageIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.AdresseServiceReference.Language Language_origineField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int LenghtField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RatingField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime Release_yearField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int RentalField;
+        private int Remplacement_costField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int Rental_durationField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int Rental_rateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Special_featuresField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private CinemaCLIENT.AdresseServiceReference.Store[] StoresField;
@@ -1505,6 +1517,19 @@ namespace CinemaCLIENT.AdresseServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Languag_origineID {
+            get {
+                return this.Languag_origineIDField;
+            }
+            set {
+                if ((this.Languag_origineIDField.Equals(value) != true)) {
+                    this.Languag_origineIDField = value;
+                    this.RaisePropertyChanged("Languag_origineID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public CinemaCLIENT.AdresseServiceReference.Language Language {
             get {
                 return this.LanguageField;
@@ -1531,6 +1556,19 @@ namespace CinemaCLIENT.AdresseServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.AdresseServiceReference.Language Language_origine {
+            get {
+                return this.Language_origineField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Language_origineField, value) != true)) {
+                    this.Language_origineField = value;
+                    this.RaisePropertyChanged("Language_origine");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public int Lenght {
             get {
                 return this.LenghtField;
@@ -1539,6 +1577,19 @@ namespace CinemaCLIENT.AdresseServiceReference {
                 if ((this.LenghtField.Equals(value) != true)) {
                     this.LenghtField = value;
                     this.RaisePropertyChanged("Lenght");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Rating {
+            get {
+                return this.RatingField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RatingField, value) != true)) {
+                    this.RatingField = value;
+                    this.RaisePropertyChanged("Rating");
                 }
             }
         }
@@ -1557,14 +1608,14 @@ namespace CinemaCLIENT.AdresseServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Rental {
+        public int Remplacement_cost {
             get {
-                return this.RentalField;
+                return this.Remplacement_costField;
             }
             set {
-                if ((this.RentalField.Equals(value) != true)) {
-                    this.RentalField = value;
-                    this.RaisePropertyChanged("Rental");
+                if ((this.Remplacement_costField.Equals(value) != true)) {
+                    this.Remplacement_costField = value;
+                    this.RaisePropertyChanged("Remplacement_cost");
                 }
             }
         }
@@ -1591,6 +1642,19 @@ namespace CinemaCLIENT.AdresseServiceReference {
                 if ((this.Rental_rateField.Equals(value) != true)) {
                     this.Rental_rateField = value;
                     this.RaisePropertyChanged("Rental_rate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Special_features {
+            get {
+                return this.Special_featuresField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Special_featuresField, value) != true)) {
+                    this.Special_featuresField = value;
+                    this.RaisePropertyChanged("Special_features");
                 }
             }
         }

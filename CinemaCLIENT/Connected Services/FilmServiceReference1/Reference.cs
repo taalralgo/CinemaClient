@@ -8,1423 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CinemaCLIENT.StaffServiceReference {
+namespace CinemaCLIENT.FilmServiceReference1 {
     using System.Runtime.Serialization;
     using System;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Staff", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
-    [System.SerializableAttribute()]
-    public partial class Staff : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool ActiveField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Adresse AdresseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int AdresseIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string EmailField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NomField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PasswdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Payment[] PaymentsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private byte[] PictureField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PrenomField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Rental[] RentalsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RoleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Store StoreField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int StoreIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UserNameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool Active {
-            get {
-                return this.ActiveField;
-            }
-            set {
-                if ((this.ActiveField.Equals(value) != true)) {
-                    this.ActiveField = value;
-                    this.RaisePropertyChanged("Active");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Adresse Adresse {
-            get {
-                return this.AdresseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AdresseField, value) != true)) {
-                    this.AdresseField = value;
-                    this.RaisePropertyChanged("Adresse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int AdresseID {
-            get {
-                return this.AdresseIDField;
-            }
-            set {
-                if ((this.AdresseIDField.Equals(value) != true)) {
-                    this.AdresseIDField = value;
-                    this.RaisePropertyChanged("AdresseID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Email {
-            get {
-                return this.EmailField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
-                    this.EmailField = value;
-                    this.RaisePropertyChanged("Email");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Nom {
-            get {
-                return this.NomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NomField, value) != true)) {
-                    this.NomField = value;
-                    this.RaisePropertyChanged("Nom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Passwd {
-            get {
-                return this.PasswdField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PasswdField, value) != true)) {
-                    this.PasswdField = value;
-                    this.RaisePropertyChanged("Passwd");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Payment[] Payments {
-            get {
-                return this.PaymentsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PaymentsField, value) != true)) {
-                    this.PaymentsField = value;
-                    this.RaisePropertyChanged("Payments");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public byte[] Picture {
-            get {
-                return this.PictureField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PictureField, value) != true)) {
-                    this.PictureField = value;
-                    this.RaisePropertyChanged("Picture");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Prenom {
-            get {
-                return this.PrenomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PrenomField, value) != true)) {
-                    this.PrenomField = value;
-                    this.RaisePropertyChanged("Prenom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Rental[] Rentals {
-            get {
-                return this.RentalsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RentalsField, value) != true)) {
-                    this.RentalsField = value;
-                    this.RaisePropertyChanged("Rentals");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Role {
-            get {
-                return this.RoleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RoleField, value) != true)) {
-                    this.RoleField = value;
-                    this.RaisePropertyChanged("Role");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Store Store {
-            get {
-                return this.StoreField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StoreField, value) != true)) {
-                    this.StoreField = value;
-                    this.RaisePropertyChanged("Store");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int StoreID {
-            get {
-                return this.StoreIDField;
-            }
-            set {
-                if ((this.StoreIDField.Equals(value) != true)) {
-                    this.StoreIDField = value;
-                    this.RaisePropertyChanged("StoreID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string UserName {
-            get {
-                return this.UserNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UserNameField, value) != true)) {
-                    this.UserNameField = value;
-                    this.RaisePropertyChanged("UserName");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Adresse", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
-    [System.SerializableAttribute()]
-    public partial class Adresse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.City CityField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CityIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Customer[] ClientsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DistrictField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NomField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PhoneField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Staff[] StaffsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Store[] StoresField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.City City {
-            get {
-                return this.CityField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CityField, value) != true)) {
-                    this.CityField = value;
-                    this.RaisePropertyChanged("City");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CityID {
-            get {
-                return this.CityIDField;
-            }
-            set {
-                if ((this.CityIDField.Equals(value) != true)) {
-                    this.CityIDField = value;
-                    this.RaisePropertyChanged("CityID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Customer[] Clients {
-            get {
-                return this.ClientsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ClientsField, value) != true)) {
-                    this.ClientsField = value;
-                    this.RaisePropertyChanged("Clients");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string District {
-            get {
-                return this.DistrictField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DistrictField, value) != true)) {
-                    this.DistrictField = value;
-                    this.RaisePropertyChanged("District");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Nom {
-            get {
-                return this.NomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NomField, value) != true)) {
-                    this.NomField = value;
-                    this.RaisePropertyChanged("Nom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Phone {
-            get {
-                return this.PhoneField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PhoneField, value) != true)) {
-                    this.PhoneField = value;
-                    this.RaisePropertyChanged("Phone");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Staff[] Staffs {
-            get {
-                return this.StaffsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StaffsField, value) != true)) {
-                    this.StaffsField = value;
-                    this.RaisePropertyChanged("Staffs");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Store[] Stores {
-            get {
-                return this.StoresField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StoresField, value) != true)) {
-                    this.StoresField = value;
-                    this.RaisePropertyChanged("Stores");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Store", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
-    [System.SerializableAttribute()]
-    public partial class Store : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Adresse AdresseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int AdresseIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Customer[] ClientsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Film[] FilmsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Staff[] StaffsField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Adresse Adresse {
-            get {
-                return this.AdresseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AdresseField, value) != true)) {
-                    this.AdresseField = value;
-                    this.RaisePropertyChanged("Adresse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int AdresseID {
-            get {
-                return this.AdresseIDField;
-            }
-            set {
-                if ((this.AdresseIDField.Equals(value) != true)) {
-                    this.AdresseIDField = value;
-                    this.RaisePropertyChanged("AdresseID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Customer[] Clients {
-            get {
-                return this.ClientsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ClientsField, value) != true)) {
-                    this.ClientsField = value;
-                    this.RaisePropertyChanged("Clients");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Film[] Films {
-            get {
-                return this.FilmsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FilmsField, value) != true)) {
-                    this.FilmsField = value;
-                    this.RaisePropertyChanged("Films");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Staff[] Staffs {
-            get {
-                return this.StaffsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StaffsField, value) != true)) {
-                    this.StaffsField = value;
-                    this.RaisePropertyChanged("Staffs");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Payment", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
-    [System.SerializableAttribute()]
-    public partial class Payment : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int AmountField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Customer CustomerField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CustomerIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Rental RentalField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int RentalIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Staff StaffField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int StaffIDField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Amount {
-            get {
-                return this.AmountField;
-            }
-            set {
-                if ((this.AmountField.Equals(value) != true)) {
-                    this.AmountField = value;
-                    this.RaisePropertyChanged("Amount");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Customer Customer {
-            get {
-                return this.CustomerField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CustomerField, value) != true)) {
-                    this.CustomerField = value;
-                    this.RaisePropertyChanged("Customer");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CustomerID {
-            get {
-                return this.CustomerIDField;
-            }
-            set {
-                if ((this.CustomerIDField.Equals(value) != true)) {
-                    this.CustomerIDField = value;
-                    this.RaisePropertyChanged("CustomerID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Date {
-            get {
-                return this.DateField;
-            }
-            set {
-                if ((this.DateField.Equals(value) != true)) {
-                    this.DateField = value;
-                    this.RaisePropertyChanged("Date");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Rental Rental {
-            get {
-                return this.RentalField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RentalField, value) != true)) {
-                    this.RentalField = value;
-                    this.RaisePropertyChanged("Rental");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int RentalID {
-            get {
-                return this.RentalIDField;
-            }
-            set {
-                if ((this.RentalIDField.Equals(value) != true)) {
-                    this.RentalIDField = value;
-                    this.RaisePropertyChanged("RentalID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Staff Staff {
-            get {
-                return this.StaffField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StaffField, value) != true)) {
-                    this.StaffField = value;
-                    this.RaisePropertyChanged("Staff");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int StaffID {
-            get {
-                return this.StaffIDField;
-            }
-            set {
-                if ((this.StaffIDField.Equals(value) != true)) {
-                    this.StaffIDField = value;
-                    this.RaisePropertyChanged("StaffID");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Rental", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
-    [System.SerializableAttribute()]
-    public partial class Rental : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Customer CustomerField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CustomerIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Inventory InventoryField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int InventoryIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime ReturnDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Staff StaffField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int StaffIDField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Customer Customer {
-            get {
-                return this.CustomerField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CustomerField, value) != true)) {
-                    this.CustomerField = value;
-                    this.RaisePropertyChanged("Customer");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CustomerID {
-            get {
-                return this.CustomerIDField;
-            }
-            set {
-                if ((this.CustomerIDField.Equals(value) != true)) {
-                    this.CustomerIDField = value;
-                    this.RaisePropertyChanged("CustomerID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Date {
-            get {
-                return this.DateField;
-            }
-            set {
-                if ((this.DateField.Equals(value) != true)) {
-                    this.DateField = value;
-                    this.RaisePropertyChanged("Date");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Inventory Inventory {
-            get {
-                return this.InventoryField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.InventoryField, value) != true)) {
-                    this.InventoryField = value;
-                    this.RaisePropertyChanged("Inventory");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int InventoryID {
-            get {
-                return this.InventoryIDField;
-            }
-            set {
-                if ((this.InventoryIDField.Equals(value) != true)) {
-                    this.InventoryIDField = value;
-                    this.RaisePropertyChanged("InventoryID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime ReturnDate {
-            get {
-                return this.ReturnDateField;
-            }
-            set {
-                if ((this.ReturnDateField.Equals(value) != true)) {
-                    this.ReturnDateField = value;
-                    this.RaisePropertyChanged("ReturnDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Staff Staff {
-            get {
-                return this.StaffField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StaffField, value) != true)) {
-                    this.StaffField = value;
-                    this.RaisePropertyChanged("Staff");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int StaffID {
-            get {
-                return this.StaffIDField;
-            }
-            set {
-                if ((this.StaffIDField.Equals(value) != true)) {
-                    this.StaffIDField = value;
-                    this.RaisePropertyChanged("StaffID");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="City", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
-    [System.SerializableAttribute()]
-    public partial class City : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Country CountryField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CountryIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NomField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Country Country {
-            get {
-                return this.CountryField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
-                    this.CountryField = value;
-                    this.RaisePropertyChanged("Country");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CountryID {
-            get {
-                return this.CountryIDField;
-            }
-            set {
-                if ((this.CountryIDField.Equals(value) != true)) {
-                    this.CountryIDField = value;
-                    this.RaisePropertyChanged("CountryID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Nom {
-            get {
-                return this.NomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NomField, value) != true)) {
-                    this.NomField = value;
-                    this.RaisePropertyChanged("Nom");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Customer", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
-    [System.SerializableAttribute()]
-    public partial class Customer : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool ActiveField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Adresse AdresseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int AdresseIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string EmailField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NomField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Payment[] PaymentsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private byte[] PictureField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PrenomField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Rental[] RentalsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Store StoreField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int StoreIDField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool Active {
-            get {
-                return this.ActiveField;
-            }
-            set {
-                if ((this.ActiveField.Equals(value) != true)) {
-                    this.ActiveField = value;
-                    this.RaisePropertyChanged("Active");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Adresse Adresse {
-            get {
-                return this.AdresseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AdresseField, value) != true)) {
-                    this.AdresseField = value;
-                    this.RaisePropertyChanged("Adresse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int AdresseID {
-            get {
-                return this.AdresseIDField;
-            }
-            set {
-                if ((this.AdresseIDField.Equals(value) != true)) {
-                    this.AdresseIDField = value;
-                    this.RaisePropertyChanged("AdresseID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Email {
-            get {
-                return this.EmailField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
-                    this.EmailField = value;
-                    this.RaisePropertyChanged("Email");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Nom {
-            get {
-                return this.NomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NomField, value) != true)) {
-                    this.NomField = value;
-                    this.RaisePropertyChanged("Nom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Payment[] Payments {
-            get {
-                return this.PaymentsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PaymentsField, value) != true)) {
-                    this.PaymentsField = value;
-                    this.RaisePropertyChanged("Payments");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public byte[] Picture {
-            get {
-                return this.PictureField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PictureField, value) != true)) {
-                    this.PictureField = value;
-                    this.RaisePropertyChanged("Picture");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Prenom {
-            get {
-                return this.PrenomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PrenomField, value) != true)) {
-                    this.PrenomField = value;
-                    this.RaisePropertyChanged("Prenom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Rental[] Rentals {
-            get {
-                return this.RentalsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RentalsField, value) != true)) {
-                    this.RentalsField = value;
-                    this.RaisePropertyChanged("Rentals");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Store Store {
-            get {
-                return this.StoreField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StoreField, value) != true)) {
-                    this.StoreField = value;
-                    this.RaisePropertyChanged("Store");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int StoreID {
-            get {
-                return this.StoreIDField;
-            }
-            set {
-                if ((this.StoreIDField.Equals(value) != true)) {
-                    this.StoreIDField = value;
-                    this.RaisePropertyChanged("StoreID");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Country", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
-    [System.SerializableAttribute()]
-    public partial class Country : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.City[] CitiesField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NomField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.City[] Cities {
-            get {
-                return this.CitiesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CitiesField, value) != true)) {
-                    this.CitiesField = value;
-                    this.RaisePropertyChanged("Cities");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Nom {
-            get {
-                return this.NomField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NomField, value) != true)) {
-                    this.NomField = value;
-                    this.RaisePropertyChanged("Nom");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Inventory", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
-    [System.SerializableAttribute()]
-    public partial class Inventory : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Film FilmField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int FilmIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Store StoreField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int StoreIDField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Film Film {
-            get {
-                return this.FilmField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FilmField, value) != true)) {
-                    this.FilmField = value;
-                    this.RaisePropertyChanged("Film");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int FilmID {
-            get {
-                return this.FilmIDField;
-            }
-            set {
-                if ((this.FilmIDField.Equals(value) != true)) {
-                    this.FilmIDField = value;
-                    this.RaisePropertyChanged("FilmID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Store Store {
-            get {
-                return this.StoreField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StoreField, value) != true)) {
-                    this.StoreField = value;
-                    this.RaisePropertyChanged("Store");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int StoreID {
-            get {
-                return this.StoreIDField;
-            }
-            set {
-                if ((this.StoreIDField.Equals(value) != true)) {
-                    this.StoreIDField = value;
-                    this.RaisePropertyChanged("StoreID");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
@@ -1445,13 +32,13 @@ namespace CinemaCLIENT.StaffServiceReference {
         private int Languag_origineIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Language LanguageField;
+        private CinemaCLIENT.FilmServiceReference1.Language LanguageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int LanguageIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Language Language_origineField;
+        private CinemaCLIENT.FilmServiceReference1.Language Language_origineField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int LenghtField;
@@ -1475,7 +62,7 @@ namespace CinemaCLIENT.StaffServiceReference {
         private string Special_featuresField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Store[] StoresField;
+        private CinemaCLIENT.FilmServiceReference1.Store[] StoresField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TitleField;
@@ -1530,7 +117,7 @@ namespace CinemaCLIENT.StaffServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Language Language {
+        public CinemaCLIENT.FilmServiceReference1.Language Language {
             get {
                 return this.LanguageField;
             }
@@ -1556,7 +143,7 @@ namespace CinemaCLIENT.StaffServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Language Language_origine {
+        public CinemaCLIENT.FilmServiceReference1.Language Language_origine {
             get {
                 return this.Language_origineField;
             }
@@ -1660,7 +247,7 @@ namespace CinemaCLIENT.StaffServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Store[] Stores {
+        public CinemaCLIENT.FilmServiceReference1.Store[] Stores {
             get {
                 return this.StoresField;
             }
@@ -1705,7 +292,7 @@ namespace CinemaCLIENT.StaffServiceReference {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CinemaCLIENT.StaffServiceReference.Film[] FilmsField;
+        private CinemaCLIENT.FilmServiceReference1.Film[] FilmsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IDField;
@@ -1724,7 +311,7 @@ namespace CinemaCLIENT.StaffServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public CinemaCLIENT.StaffServiceReference.Film[] Films {
+        public CinemaCLIENT.FilmServiceReference1.Film[] Films {
             get {
                 return this.FilmsField;
             }
@@ -1772,106 +359,1519 @@ namespace CinemaCLIENT.StaffServiceReference {
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="StaffServiceReference.IStaffServce")]
-    public interface IStaffServce {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Store", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
+    [System.SerializableAttribute()]
+    public partial class Store : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Add", ReplyAction="http://tempuri.org/IStaffServce/AddResponse")]
-        CinemaCLIENT.StaffServiceReference.Staff Add(CinemaCLIENT.StaffServiceReference.Staff staff);
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Add", ReplyAction="http://tempuri.org/IStaffServce/AddResponse")]
-        System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff> AddAsync(CinemaCLIENT.StaffServiceReference.Staff staff);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Adresse AdresseField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/FindAll", ReplyAction="http://tempuri.org/IStaffServce/FindAllResponse")]
-        CinemaCLIENT.StaffServiceReference.Staff[] FindAll();
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AdresseIDField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/FindAll", ReplyAction="http://tempuri.org/IStaffServce/FindAllResponse")]
-        System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff[]> FindAllAsync();
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Customer[] ClientsField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Find", ReplyAction="http://tempuri.org/IStaffServce/FindResponse")]
-        CinemaCLIENT.StaffServiceReference.Staff Find(int id);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Film[] FilmsField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Find", ReplyAction="http://tempuri.org/IStaffServce/FindResponse")]
-        System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff> FindAsync(int id);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/FindUser", ReplyAction="http://tempuri.org/IStaffServce/FindUserResponse")]
-        CinemaCLIENT.StaffServiceReference.Staff FindUser(string username);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Staff[] StaffsField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/FindUser", ReplyAction="http://tempuri.org/IStaffServce/FindUserResponse")]
-        System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff> FindUserAsync(string username);
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Modifier", ReplyAction="http://tempuri.org/IStaffServce/ModifierResponse")]
-        int Modifier(int id, CinemaCLIENT.StaffServiceReference.Adresse adresse, byte[] photo, CinemaCLIENT.StaffServiceReference.Store store, bool etat, string nom, string prenom, string email, string username, string password, string role);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Adresse Adresse {
+            get {
+                return this.AdresseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AdresseField, value) != true)) {
+                    this.AdresseField = value;
+                    this.RaisePropertyChanged("Adresse");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Modifier", ReplyAction="http://tempuri.org/IStaffServce/ModifierResponse")]
-        System.Threading.Tasks.Task<int> ModifierAsync(int id, CinemaCLIENT.StaffServiceReference.Adresse adresse, byte[] photo, CinemaCLIENT.StaffServiceReference.Store store, bool etat, string nom, string prenom, string email, string username, string password, string role);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AdresseID {
+            get {
+                return this.AdresseIDField;
+            }
+            set {
+                if ((this.AdresseIDField.Equals(value) != true)) {
+                    this.AdresseIDField = value;
+                    this.RaisePropertyChanged("AdresseID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Customer[] Clients {
+            get {
+                return this.ClientsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ClientsField, value) != true)) {
+                    this.ClientsField = value;
+                    this.RaisePropertyChanged("Clients");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Film[] Films {
+            get {
+                return this.FilmsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FilmsField, value) != true)) {
+                    this.FilmsField = value;
+                    this.RaisePropertyChanged("Films");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Staff[] Staffs {
+            get {
+                return this.StaffsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StaffsField, value) != true)) {
+                    this.StaffsField = value;
+                    this.RaisePropertyChanged("Staffs");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Adresse", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
+    [System.SerializableAttribute()]
+    public partial class Adresse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.City CityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CityIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Customer[] ClientsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DistrictField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NomField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PhoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Staff[] StaffsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Store[] StoresField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.City City {
+            get {
+                return this.CityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CityField, value) != true)) {
+                    this.CityField = value;
+                    this.RaisePropertyChanged("City");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CityID {
+            get {
+                return this.CityIDField;
+            }
+            set {
+                if ((this.CityIDField.Equals(value) != true)) {
+                    this.CityIDField = value;
+                    this.RaisePropertyChanged("CityID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Customer[] Clients {
+            get {
+                return this.ClientsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ClientsField, value) != true)) {
+                    this.ClientsField = value;
+                    this.RaisePropertyChanged("Clients");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string District {
+            get {
+                return this.DistrictField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DistrictField, value) != true)) {
+                    this.DistrictField = value;
+                    this.RaisePropertyChanged("District");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nom {
+            get {
+                return this.NomField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NomField, value) != true)) {
+                    this.NomField = value;
+                    this.RaisePropertyChanged("Nom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Phone {
+            get {
+                return this.PhoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhoneField, value) != true)) {
+                    this.PhoneField = value;
+                    this.RaisePropertyChanged("Phone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Staff[] Staffs {
+            get {
+                return this.StaffsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StaffsField, value) != true)) {
+                    this.StaffsField = value;
+                    this.RaisePropertyChanged("Staffs");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Store[] Stores {
+            get {
+                return this.StoresField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StoresField, value) != true)) {
+                    this.StoresField = value;
+                    this.RaisePropertyChanged("Stores");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Customer", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
+    [System.SerializableAttribute()]
+    public partial class Customer : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool ActiveField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Adresse AdresseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AdresseIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NomField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Payment[] PaymentsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private byte[] PictureField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PrenomField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Rental[] RentalsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Store StoreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StoreIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool Active {
+            get {
+                return this.ActiveField;
+            }
+            set {
+                if ((this.ActiveField.Equals(value) != true)) {
+                    this.ActiveField = value;
+                    this.RaisePropertyChanged("Active");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Adresse Adresse {
+            get {
+                return this.AdresseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AdresseField, value) != true)) {
+                    this.AdresseField = value;
+                    this.RaisePropertyChanged("Adresse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AdresseID {
+            get {
+                return this.AdresseIDField;
+            }
+            set {
+                if ((this.AdresseIDField.Equals(value) != true)) {
+                    this.AdresseIDField = value;
+                    this.RaisePropertyChanged("AdresseID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nom {
+            get {
+                return this.NomField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NomField, value) != true)) {
+                    this.NomField = value;
+                    this.RaisePropertyChanged("Nom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Payment[] Payments {
+            get {
+                return this.PaymentsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PaymentsField, value) != true)) {
+                    this.PaymentsField = value;
+                    this.RaisePropertyChanged("Payments");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Picture {
+            get {
+                return this.PictureField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PictureField, value) != true)) {
+                    this.PictureField = value;
+                    this.RaisePropertyChanged("Picture");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Prenom {
+            get {
+                return this.PrenomField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PrenomField, value) != true)) {
+                    this.PrenomField = value;
+                    this.RaisePropertyChanged("Prenom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Rental[] Rentals {
+            get {
+                return this.RentalsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RentalsField, value) != true)) {
+                    this.RentalsField = value;
+                    this.RaisePropertyChanged("Rentals");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Store Store {
+            get {
+                return this.StoreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StoreField, value) != true)) {
+                    this.StoreField = value;
+                    this.RaisePropertyChanged("Store");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int StoreID {
+            get {
+                return this.StoreIDField;
+            }
+            set {
+                if ((this.StoreIDField.Equals(value) != true)) {
+                    this.StoreIDField = value;
+                    this.RaisePropertyChanged("StoreID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Staff", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
+    [System.SerializableAttribute()]
+    public partial class Staff : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool ActiveField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Adresse AdresseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AdresseIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NomField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Payment[] PaymentsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private byte[] PictureField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PrenomField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Rental[] RentalsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RoleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Store StoreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StoreIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UserNameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool Active {
+            get {
+                return this.ActiveField;
+            }
+            set {
+                if ((this.ActiveField.Equals(value) != true)) {
+                    this.ActiveField = value;
+                    this.RaisePropertyChanged("Active");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Adresse Adresse {
+            get {
+                return this.AdresseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AdresseField, value) != true)) {
+                    this.AdresseField = value;
+                    this.RaisePropertyChanged("Adresse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AdresseID {
+            get {
+                return this.AdresseIDField;
+            }
+            set {
+                if ((this.AdresseIDField.Equals(value) != true)) {
+                    this.AdresseIDField = value;
+                    this.RaisePropertyChanged("AdresseID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nom {
+            get {
+                return this.NomField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NomField, value) != true)) {
+                    this.NomField = value;
+                    this.RaisePropertyChanged("Nom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Passwd {
+            get {
+                return this.PasswdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswdField, value) != true)) {
+                    this.PasswdField = value;
+                    this.RaisePropertyChanged("Passwd");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Payment[] Payments {
+            get {
+                return this.PaymentsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PaymentsField, value) != true)) {
+                    this.PaymentsField = value;
+                    this.RaisePropertyChanged("Payments");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Picture {
+            get {
+                return this.PictureField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PictureField, value) != true)) {
+                    this.PictureField = value;
+                    this.RaisePropertyChanged("Picture");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Prenom {
+            get {
+                return this.PrenomField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PrenomField, value) != true)) {
+                    this.PrenomField = value;
+                    this.RaisePropertyChanged("Prenom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Rental[] Rentals {
+            get {
+                return this.RentalsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RentalsField, value) != true)) {
+                    this.RentalsField = value;
+                    this.RaisePropertyChanged("Rentals");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Role {
+            get {
+                return this.RoleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RoleField, value) != true)) {
+                    this.RoleField = value;
+                    this.RaisePropertyChanged("Role");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Store Store {
+            get {
+                return this.StoreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StoreField, value) != true)) {
+                    this.StoreField = value;
+                    this.RaisePropertyChanged("Store");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int StoreID {
+            get {
+                return this.StoreIDField;
+            }
+            set {
+                if ((this.StoreIDField.Equals(value) != true)) {
+                    this.StoreIDField = value;
+                    this.RaisePropertyChanged("StoreID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string UserName {
+            get {
+                return this.UserNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserNameField, value) != true)) {
+                    this.UserNameField = value;
+                    this.RaisePropertyChanged("UserName");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="City", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
+    [System.SerializableAttribute()]
+    public partial class City : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Country CountryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CountryIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NomField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Country Country {
+            get {
+                return this.CountryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
+                    this.CountryField = value;
+                    this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CountryID {
+            get {
+                return this.CountryIDField;
+            }
+            set {
+                if ((this.CountryIDField.Equals(value) != true)) {
+                    this.CountryIDField = value;
+                    this.RaisePropertyChanged("CountryID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nom {
+            get {
+                return this.NomField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NomField, value) != true)) {
+                    this.NomField = value;
+                    this.RaisePropertyChanged("Nom");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Country", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
+    [System.SerializableAttribute()]
+    public partial class Country : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.City[] CitiesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NomField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.City[] Cities {
+            get {
+                return this.CitiesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CitiesField, value) != true)) {
+                    this.CitiesField = value;
+                    this.RaisePropertyChanged("Cities");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nom {
+            get {
+                return this.NomField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NomField, value) != true)) {
+                    this.NomField = value;
+                    this.RaisePropertyChanged("Nom");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Payment", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
+    [System.SerializableAttribute()]
+    public partial class Payment : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AmountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Customer CustomerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CustomerIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Rental RentalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int RentalIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Staff StaffField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StaffIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Amount {
+            get {
+                return this.AmountField;
+            }
+            set {
+                if ((this.AmountField.Equals(value) != true)) {
+                    this.AmountField = value;
+                    this.RaisePropertyChanged("Amount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Customer Customer {
+            get {
+                return this.CustomerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CustomerField, value) != true)) {
+                    this.CustomerField = value;
+                    this.RaisePropertyChanged("Customer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CustomerID {
+            get {
+                return this.CustomerIDField;
+            }
+            set {
+                if ((this.CustomerIDField.Equals(value) != true)) {
+                    this.CustomerIDField = value;
+                    this.RaisePropertyChanged("CustomerID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Date {
+            get {
+                return this.DateField;
+            }
+            set {
+                if ((this.DateField.Equals(value) != true)) {
+                    this.DateField = value;
+                    this.RaisePropertyChanged("Date");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Rental Rental {
+            get {
+                return this.RentalField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RentalField, value) != true)) {
+                    this.RentalField = value;
+                    this.RaisePropertyChanged("Rental");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int RentalID {
+            get {
+                return this.RentalIDField;
+            }
+            set {
+                if ((this.RentalIDField.Equals(value) != true)) {
+                    this.RentalIDField = value;
+                    this.RaisePropertyChanged("RentalID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Staff Staff {
+            get {
+                return this.StaffField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StaffField, value) != true)) {
+                    this.StaffField = value;
+                    this.RaisePropertyChanged("Staff");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int StaffID {
+            get {
+                return this.StaffIDField;
+            }
+            set {
+                if ((this.StaffIDField.Equals(value) != true)) {
+                    this.StaffIDField = value;
+                    this.RaisePropertyChanged("StaffID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Rental", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
+    [System.SerializableAttribute()]
+    public partial class Rental : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Customer CustomerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CustomerIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Inventory InventoryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int InventoryIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime ReturnDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Staff StaffField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StaffIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Customer Customer {
+            get {
+                return this.CustomerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CustomerField, value) != true)) {
+                    this.CustomerField = value;
+                    this.RaisePropertyChanged("Customer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CustomerID {
+            get {
+                return this.CustomerIDField;
+            }
+            set {
+                if ((this.CustomerIDField.Equals(value) != true)) {
+                    this.CustomerIDField = value;
+                    this.RaisePropertyChanged("CustomerID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Date {
+            get {
+                return this.DateField;
+            }
+            set {
+                if ((this.DateField.Equals(value) != true)) {
+                    this.DateField = value;
+                    this.RaisePropertyChanged("Date");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Inventory Inventory {
+            get {
+                return this.InventoryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.InventoryField, value) != true)) {
+                    this.InventoryField = value;
+                    this.RaisePropertyChanged("Inventory");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int InventoryID {
+            get {
+                return this.InventoryIDField;
+            }
+            set {
+                if ((this.InventoryIDField.Equals(value) != true)) {
+                    this.InventoryIDField = value;
+                    this.RaisePropertyChanged("InventoryID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime ReturnDate {
+            get {
+                return this.ReturnDateField;
+            }
+            set {
+                if ((this.ReturnDateField.Equals(value) != true)) {
+                    this.ReturnDateField = value;
+                    this.RaisePropertyChanged("ReturnDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Staff Staff {
+            get {
+                return this.StaffField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StaffField, value) != true)) {
+                    this.StaffField = value;
+                    this.RaisePropertyChanged("Staff");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int StaffID {
+            get {
+                return this.StaffIDField;
+            }
+            set {
+                if ((this.StaffIDField.Equals(value) != true)) {
+                    this.StaffIDField = value;
+                    this.RaisePropertyChanged("StaffID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Inventory", Namespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles")]
+    [System.SerializableAttribute()]
+    public partial class Inventory : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Film FilmField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int FilmIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private CinemaCLIENT.FilmServiceReference1.Store StoreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StoreIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Film Film {
+            get {
+                return this.FilmField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FilmField, value) != true)) {
+                    this.FilmField = value;
+                    this.RaisePropertyChanged("Film");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int FilmID {
+            get {
+                return this.FilmIDField;
+            }
+            set {
+                if ((this.FilmIDField.Equals(value) != true)) {
+                    this.FilmIDField = value;
+                    this.RaisePropertyChanged("FilmID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public CinemaCLIENT.FilmServiceReference1.Store Store {
+            get {
+                return this.StoreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StoreField, value) != true)) {
+                    this.StoreField = value;
+                    this.RaisePropertyChanged("Store");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int StoreID {
+            get {
+                return this.StoreIDField;
+            }
+            set {
+                if ((this.StoreIDField.Equals(value) != true)) {
+                    this.StoreIDField = value;
+                    this.RaisePropertyChanged("StoreID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IStaffServceChannel : CinemaCLIENT.StaffServiceReference.IStaffServce, System.ServiceModel.IClientChannel {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="FilmServiceReference1.IFilmService")]
+    public interface IFilmService {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/Add", ReplyAction="http://tempuri.org/IFilmService/AddResponse")]
+        CinemaCLIENT.FilmServiceReference1.Film Add(CinemaCLIENT.FilmServiceReference1.Film film);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/Add", ReplyAction="http://tempuri.org/IFilmService/AddResponse")]
+        System.Threading.Tasks.Task<CinemaCLIENT.FilmServiceReference1.Film> AddAsync(CinemaCLIENT.FilmServiceReference1.Film film);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/Modifier", ReplyAction="http://tempuri.org/IFilmService/ModifierResponse")]
+        int Modifier(int id, CinemaCLIENT.FilmServiceReference1.Film film);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/Modifier", ReplyAction="http://tempuri.org/IFilmService/ModifierResponse")]
+        System.Threading.Tasks.Task<int> ModifierAsync(int id, CinemaCLIENT.FilmServiceReference1.Film film);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/FindAll", ReplyAction="http://tempuri.org/IFilmService/FindAllResponse")]
+        CinemaCLIENT.FilmServiceReference1.Film[] FindAll();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/FindAll", ReplyAction="http://tempuri.org/IFilmService/FindAllResponse")]
+        System.Threading.Tasks.Task<CinemaCLIENT.FilmServiceReference1.Film[]> FindAllAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/Find", ReplyAction="http://tempuri.org/IFilmService/FindResponse")]
+        CinemaCLIENT.FilmServiceReference1.Film Find(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/Find", ReplyAction="http://tempuri.org/IFilmService/FindResponse")]
+        System.Threading.Tasks.Task<CinemaCLIENT.FilmServiceReference1.Film> FindAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/FindByTitle", ReplyAction="http://tempuri.org/IFilmService/FindByTitleResponse")]
+        CinemaCLIENT.FilmServiceReference1.Film FindByTitle(string nom);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFilmService/FindByTitle", ReplyAction="http://tempuri.org/IFilmService/FindByTitleResponse")]
+        System.Threading.Tasks.Task<CinemaCLIENT.FilmServiceReference1.Film> FindByTitleAsync(string nom);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IFilmServiceChannel : CinemaCLIENT.FilmServiceReference1.IFilmService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class StaffServceClient : System.ServiceModel.ClientBase<CinemaCLIENT.StaffServiceReference.IStaffServce>, CinemaCLIENT.StaffServiceReference.IStaffServce {
+    public partial class FilmServiceClient : System.ServiceModel.ClientBase<CinemaCLIENT.FilmServiceReference1.IFilmService>, CinemaCLIENT.FilmServiceReference1.IFilmService {
         
-        public StaffServceClient() {
+        public FilmServiceClient() {
         }
         
-        public StaffServceClient(string endpointConfigurationName) : 
+        public FilmServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public StaffServceClient(string endpointConfigurationName, string remoteAddress) : 
+        public FilmServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public StaffServceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public FilmServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public StaffServceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public FilmServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public CinemaCLIENT.StaffServiceReference.Staff Add(CinemaCLIENT.StaffServiceReference.Staff staff) {
-            return base.Channel.Add(staff);
+        public CinemaCLIENT.FilmServiceReference1.Film Add(CinemaCLIENT.FilmServiceReference1.Film film) {
+            return base.Channel.Add(film);
         }
         
-        public System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff> AddAsync(CinemaCLIENT.StaffServiceReference.Staff staff) {
-            return base.Channel.AddAsync(staff);
+        public System.Threading.Tasks.Task<CinemaCLIENT.FilmServiceReference1.Film> AddAsync(CinemaCLIENT.FilmServiceReference1.Film film) {
+            return base.Channel.AddAsync(film);
         }
         
-        public CinemaCLIENT.StaffServiceReference.Staff[] FindAll() {
+        public int Modifier(int id, CinemaCLIENT.FilmServiceReference1.Film film) {
+            return base.Channel.Modifier(id, film);
+        }
+        
+        public System.Threading.Tasks.Task<int> ModifierAsync(int id, CinemaCLIENT.FilmServiceReference1.Film film) {
+            return base.Channel.ModifierAsync(id, film);
+        }
+        
+        public CinemaCLIENT.FilmServiceReference1.Film[] FindAll() {
             return base.Channel.FindAll();
         }
         
-        public System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff[]> FindAllAsync() {
+        public System.Threading.Tasks.Task<CinemaCLIENT.FilmServiceReference1.Film[]> FindAllAsync() {
             return base.Channel.FindAllAsync();
         }
         
-        public CinemaCLIENT.StaffServiceReference.Staff Find(int id) {
+        public CinemaCLIENT.FilmServiceReference1.Film Find(int id) {
             return base.Channel.Find(id);
         }
         
-        public System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff> FindAsync(int id) {
+        public System.Threading.Tasks.Task<CinemaCLIENT.FilmServiceReference1.Film> FindAsync(int id) {
             return base.Channel.FindAsync(id);
         }
         
-        public CinemaCLIENT.StaffServiceReference.Staff FindUser(string username) {
-            return base.Channel.FindUser(username);
+        public CinemaCLIENT.FilmServiceReference1.Film FindByTitle(string nom) {
+            return base.Channel.FindByTitle(nom);
         }
         
-        public System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff> FindUserAsync(string username) {
-            return base.Channel.FindUserAsync(username);
-        }
-        
-        public int Modifier(int id, CinemaCLIENT.StaffServiceReference.Adresse adresse, byte[] photo, CinemaCLIENT.StaffServiceReference.Store store, bool etat, string nom, string prenom, string email, string username, string password, string role) {
-            return base.Channel.Modifier(id, adresse, photo, store, etat, nom, prenom, email, username, password, role);
-        }
-        
-        public System.Threading.Tasks.Task<int> ModifierAsync(int id, CinemaCLIENT.StaffServiceReference.Adresse adresse, byte[] photo, CinemaCLIENT.StaffServiceReference.Store store, bool etat, string nom, string prenom, string email, string username, string password, string role) {
-            return base.Channel.ModifierAsync(id, adresse, photo, store, etat, nom, prenom, email, username, password, role);
+        public System.Threading.Tasks.Task<CinemaCLIENT.FilmServiceReference1.Film> FindByTitleAsync(string nom) {
+            return base.Channel.FindByTitleAsync(nom);
         }
     }
 }

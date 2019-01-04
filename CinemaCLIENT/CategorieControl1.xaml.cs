@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaCLIENT.CategorieServiceReference;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,15 @@ namespace CinemaCLIENT
         public CategorieControl1()
         {
             InitializeComponent();
+            try
+            {
+                CategoryServiceClient CategoClient = new CategoryServiceClient();
+                tableau.ItemsSource = CategoClient.FindAll();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Le serveur n'est pas demarré");
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

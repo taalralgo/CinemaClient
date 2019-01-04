@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Category">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Films" nillable="true" type="tns:ArrayOfFilm" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Nom" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Category" nillable="true" type="tns:Category" />
+  <xs:complexType name="ArrayOfFilm">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Film" nillable="true" type="tns:Film" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFilm" nillable="true" type="tns:ArrayOfFilm" />
+  <xs:complexType name="Film">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Languag_origineID" type="xs:int" />
+      <xs:element minOccurs="0" name="Language" nillable="true" type="tns:Language" />
+      <xs:element minOccurs="0" name="LanguageID" type="xs:int" />
+      <xs:element minOccurs="0" name="Language_origine" nillable="true" type="tns:Language" />
+      <xs:element minOccurs="0" name="Lenght" type="xs:int" />
+      <xs:element minOccurs="0" name="Rating" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Release_year" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Remplacement_cost" type="xs:int" />
+      <xs:element minOccurs="0" name="Rental_duration" type="xs:int" />
+      <xs:element minOccurs="0" name="Rental_rate" type="xs:int" />
+      <xs:element minOccurs="0" name="Special_features" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Stores" nillable="true" type="tns:ArrayOfStore" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Film" nillable="true" type="tns:Film" />
+  <xs:complexType name="Language">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Films" nillable="true" type="tns:ArrayOfFilm" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Language" nillable="true" type="tns:Language" />
+  <xs:complexType name="ArrayOfStore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Store" nillable="true" type="tns:Store" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStore" nillable="true" type="tns:ArrayOfStore" />
   <xs:complexType name="Store">
     <xs:sequence>
       <xs:element minOccurs="0" name="Adresse" nillable="true" type="tns:Adresse" />
@@ -115,46 +163,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Inventory" nillable="true" type="tns:Inventory" />
-  <xs:complexType name="Film">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="ID" type="xs:int" />
-      <xs:element minOccurs="0" name="Languag_origineID" type="xs:int" />
-      <xs:element minOccurs="0" name="Language" nillable="true" type="tns:Language" />
-      <xs:element minOccurs="0" name="LanguageID" type="xs:int" />
-      <xs:element minOccurs="0" name="Language_origine" nillable="true" type="tns:Language" />
-      <xs:element minOccurs="0" name="Lenght" type="xs:int" />
-      <xs:element minOccurs="0" name="Rating" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Release_year" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="Remplacement_cost" type="xs:int" />
-      <xs:element minOccurs="0" name="Rental_duration" type="xs:int" />
-      <xs:element minOccurs="0" name="Rental_rate" type="xs:int" />
-      <xs:element minOccurs="0" name="Special_features" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Stores" nillable="true" type="tns:ArrayOfStore" />
-      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="Film" nillable="true" type="tns:Film" />
-  <xs:complexType name="Language">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Films" nillable="true" type="tns:ArrayOfFilm" />
-      <xs:element minOccurs="0" name="ID" type="xs:int" />
-      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="Language" nillable="true" type="tns:Language" />
-  <xs:complexType name="ArrayOfFilm">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Film" nillable="true" type="tns:Film" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfFilm" nillable="true" type="tns:ArrayOfFilm" />
-  <xs:complexType name="ArrayOfStore">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Store" nillable="true" type="tns:Store" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfStore" nillable="true" type="tns:ArrayOfStore" />
   <xs:complexType name="Staff">
     <xs:sequence>
       <xs:element minOccurs="0" name="Active" type="xs:boolean" />
@@ -187,4 +195,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfStaff" nillable="true" type="tns:ArrayOfStaff" />
+  <xs:complexType name="ArrayOfCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Category" nillable="true" type="tns:Category" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCategory" nillable="true" type="tns:ArrayOfCategory" />
 </xs:schema>

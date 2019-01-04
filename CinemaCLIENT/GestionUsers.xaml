@@ -29,8 +29,8 @@
                     <DataGridTextColumn Binding="{Binding Email}" ClipboardContentBinding="{x:Null}" Header="EMAIL" Width="*" CanUserReorder="False"/>
                     <DataGridTextColumn Binding="{Binding Active}" ClipboardContentBinding="{x:Null}" Header="STATUS" Width="*" CanUserReorder="False"/>
                     <DataGridTextColumn Binding="{Binding UserName}" ClipboardContentBinding="{x:Null}" Header="USERNAME" Width="*" CanUserReorder="False"/>
-                    <DataGridTextColumn Binding="{Binding Adresse_ID}" ClipboardContentBinding="{x:Null}" Header="ADRESSE" Width="*" CanUserReorder="False"/>
-                    <DataGridTextColumn Binding="{Binding Store_ID}" ClipboardContentBinding="{x:Null}" Header="STORE" Width="*" CanUserReorder="False"/>
+                    <DataGridTextColumn Binding="{Binding AdresseID}" ClipboardContentBinding="{x:Null}" Header="ADRESSE" Width="*" CanUserReorder="False"/>
+                    <DataGridTextColumn Binding="{Binding StoreID}" ClipboardContentBinding="{x:Null}" Header="STORE" Width="*" CanUserReorder="False"/>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>

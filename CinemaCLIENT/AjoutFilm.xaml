@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="AjoutFilm" Height="498.305" Width="761.864" >
     <Grid>
-        <Button Background="Green" x:Name="BTNEnregistrerFilm" Content="Enregistrer" HorizontalAlignment="Left" Margin="41,395,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button Background="Green" x:Name="Ajouter" Content="Enregistrer" HorizontalAlignment="Left" Margin="41,395,0,0" VerticalAlignment="Top" Width="118" Click="Ajouter_Click"/>
         <Label Content="Titre" HorizontalAlignment="Left" Margin="20,32,0,0" VerticalAlignment="Top" Width="118"/>
         <TextBox x:Name="TitreTxt" HorizontalAlignment="Left" Height="23" Margin="175,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Description" HorizontalAlignment="Left" Margin="20,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
         <TextBox x:Name="DescriptionTxt" HorizontalAlignment="Left" Height="23" Margin="175,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="annee de sortie" HorizontalAlignment="Left" Margin="20,121,0,0" VerticalAlignment="Top" Width="118"/>
-        <TextBox x:Name="AsTxt" HorizontalAlignment="Left" Height="23" Margin="175,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="AnneeSortie" HorizontalAlignment="Left" Margin="175,125,0,0" VerticalAlignment="Top" Height="25" Width="115"/>
         <Label Content="Durée Location" HorizontalAlignment="Left" Margin="20,258,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
         <TextBox x:Name="DureeLTxt" HorizontalAlignment="Left" Height="23" Margin="175,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Langue" HorizontalAlignment="Left" Margin="20,211,0,0" VerticalAlignment="Top" Width="118"/>
@@ -22,7 +22,7 @@
         <ComboBox x:Name="OLangueCbx" HorizontalAlignment="Left" Margin="175,164,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Durée Film" HorizontalAlignment="Left" Margin="331,34,0,0" VerticalAlignment="Top" Width="118"/>
         <TextBox x:Name="LongueurTxt" HorizontalAlignment="Left" Height="23" Margin="486,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Coût de remplacment" HorizontalAlignment="Left" Margin="331,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="132"/>
+        <Label Content="Coût de remplacement" HorizontalAlignment="Left" Margin="331,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="132"/>
         <TextBox x:Name="CoutRTxt" HorizontalAlignment="Left" Height="23" Margin="486,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Evaluation" HorizontalAlignment="Left" Margin="331,123,0,0" VerticalAlignment="Top" Width="118"/>
         <TextBox x:Name="EvaluatoinTxt" HorizontalAlignment="Left" Height="23" Margin="486,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -31,6 +31,7 @@
         <Label Content="Caracteristiques speciales" HorizontalAlignment="Left" Margin="331,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="150"/>
         <TextBox x:Name="CaracteristqueSpTxt" HorizontalAlignment="Left" Height="23" Margin="486,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Background="red" Content="Annuler" HorizontalAlignment="Left" Margin="196,395,0,0" VerticalAlignment="Top" Width="118" Click="Button_Click"/>
+
 
     </Grid>
 </Window>

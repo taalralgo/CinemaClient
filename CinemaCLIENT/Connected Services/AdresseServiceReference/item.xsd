@@ -108,13 +108,17 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Languag_origineID" type="xs:int" />
       <xs:element minOccurs="0" name="Language" nillable="true" type="tns:Language" />
       <xs:element minOccurs="0" name="LanguageID" type="xs:int" />
+      <xs:element minOccurs="0" name="Language_origine" nillable="true" type="tns:Language" />
       <xs:element minOccurs="0" name="Lenght" type="xs:int" />
+      <xs:element minOccurs="0" name="Rating" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Release_year" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="Rental" type="xs:int" />
+      <xs:element minOccurs="0" name="Remplacement_cost" type="xs:int" />
       <xs:element minOccurs="0" name="Rental_duration" type="xs:int" />
       <xs:element minOccurs="0" name="Rental_rate" type="xs:int" />
+      <xs:element minOccurs="0" name="Special_features" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Stores" nillable="true" type="tns:ArrayOfStore" />
       <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
     </xs:sequence>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7614ea89-ec82-43d9-bd9d-06b3b76385d8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/FilmLibrary.Services_Interfaces/LanguageService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="d2ec0a1d-7775-47f5-995b-c256c31c686d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FilmLibrary.Services_Interfaces/LanguageService/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="f4d83449-7f25-4774-8acc-dbbb7a1e4aeb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FilmLibrary.Services_Interfaces/LanguageService/?xsd=xsd1" />
+    <MetadataFile FileName="LanguageService.wsdl" MetadataType="Wsdl" ID="73d46fa9-1a77-45fa-95cd-5bbae144aa10" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FilmLibrary.Services_Interfaces/LanguageService/?wsdl" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="45d852b7-b247-4649-85ae-10e566b82db9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FilmLibrary.Services_Interfaces/LanguageService/?xsd=xsd0" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="06d1d3da-32d5-405c-b523-405e4d9430a3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FilmLibrary.Services_Interfaces/LanguageService/?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -21,7 +21,16 @@
                 <ColumnDefinition Width="399*"/>
                 <ColumnDefinition Width="8*"/>
             </Grid.ColumnDefinitions>
-            <DataGrid  HorizontalAlignment="Left" Height="231" VerticalAlignment="Top" Width="875" Background="#FF2CA9B6" Margin="0,10,0,0" RenderTransformOrigin="0.674,0.602" Grid.ColumnSpan="2"/>
+            <DataGrid Name="tableau" HorizontalAlignment="Left" Height="231" VerticalAlignment="Top" Width="875" Background="#FF2CA9B6" Margin="0,10,0,0" RenderTransformOrigin="0.674,0.602" Grid.ColumnSpan="2" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="TITLE" Binding="{Binding Title}" CanUserReorder="False" ClipboardContentBinding="{x:Null}" Width="*"/>
+                    <DataGridTextColumn Header="DATE SORTIE" Binding="{Binding Release_year}" CanUserReorder="False" ClipboardContentBinding="{x:Null}" Width="*"/>
+                    <DataGridTextColumn Header="LANGUE ORIGINALE" Binding="{Binding Languag_origineID}" CanUserReorder="False" ClipboardContentBinding="{x:Null}" Width="*"/>
+                    <DataGridTextColumn Header="LANGUE" Binding="{Binding LanguageID}" CanUserReorder="False" ClipboardContentBinding="{x:Null}" Width="*"/>
+                    <DataGridTextColumn Header="DUREE LOCATION" Binding="{Binding Rental_duration}" CanUserReorder="False" ClipboardContentBinding="{x:Null}" Width="*"/>
+                    <DataGridTextColumn Header="PRIX LOCATION(FCFA)" Binding="{Binding Rental_rate}" CanUserReorder="False" ClipboardContentBinding="{x:Null}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
         </Grid>
         <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="49.546" Margin="3.792,44.229,0,-59.547" Grid.Row="1" VerticalAlignment="Top" Width="558.385">
             <TextBox x:Name="recherche" HorizontalAlignment="Center" Height="34.546" Margin="189.583,10,0,5" TextWrapping="Wrap" VerticalAlignment="Center" Width="368.802"/>

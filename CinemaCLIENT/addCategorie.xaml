@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaCLIENT"
         mc:Ignorable="d"
-        Title="addCategorie" Height="373.729" Width="721.186">
+        Title="addCategorie" Height="373.729" Width="721.186" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,-21">
-        <Button Background="Green" Content="Enregistrer" HorizontalAlignment="Left" Margin="56,164,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button x:Name="Ajouter" Background="Green" Content="Enregistrer" HorizontalAlignment="Left" Margin="56,164,0,0" VerticalAlignment="Top" Width="118" Click="Ajouter_Click"/>
         <Label Content="Libelle Categorie" HorizontalAlignment="Left" Margin="20,32,0,0" VerticalAlignment="Top" Width="118"/>
         <TextBox x:Name="CategorieTxt" HorizontalAlignment="Left" Height="26" Margin="175,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"/>
-        <Button Background="Green" Content="Modifier" HorizontalAlignment="Left" Margin="478,164,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button x:Name="Modifier" Background="Green" Content="Modifier" HorizontalAlignment="Left" Margin="478,164,0,0" VerticalAlignment="Top" Width="118" Click="Modifier_Click"/>
         <Button Background="Red" Content="Annuler" HorizontalAlignment="Left" Margin="269,164,0,0" VerticalAlignment="Top" Width="118" Click="Button_Click"/>
+        <Label x:Name="lbl" Content="Nouveau Nom" HorizontalAlignment="Left" Margin="20,82,0,0" VerticalAlignment="Top" Width="118" Visibility="Hidden"/>
+        <TextBox x:Name="CategorieNouTxt" HorizontalAlignment="Left" Height="26" Margin="175,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" Visibility="Hidden"/>
 
     </Grid>
 </Window>

@@ -4,6 +4,7 @@ using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.ServiceModel;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -77,8 +78,6 @@ namespace CinemaCLIENT
                         staff.Passwd = password;
                         staff.AdresseID = ((AdresseServiceReference.Adresse)AdressCbx.SelectedItem).ID;
                         staff.StoreID = ((StoreServiceReference.Store)StoreCbx.SelectedItem).ID;
-                        staff.Store.ID = staff.StoreID;
-                        staff.Adresse.ID = staff.AdresseID;
 
                         byte[] imge;
                         FileStream fs = new FileStream(imgpicture, FileMode.Open, FileAccess.Read);
@@ -97,8 +96,11 @@ namespace CinemaCLIENT
                         }
                         try
                         {
+                            BasicHttpBinding binding = new BasicHttpBinding();
+                            binding.MaxReceivedMessageSize = 2147483647;
                             StaffServceClient StaffClient = new StaffServceClient();
                             StaffClient.Add(staff);
+                            MessageBox.Show("Staff ajouter avec success");
                         }
                         catch(Exception ex)
                         {
