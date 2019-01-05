@@ -8,7 +8,7 @@
         Title="updateUser" Height="455.085" Width="1072.033">
     <Grid>
         <Grid Margin="0,0,-8,-21">
-            <Button Background="Green" Content="Modifier" HorizontalAlignment="Left" Margin="41,296,0,0" VerticalAlignment="Top" Width="118"/>
+            <Button x:Name="Modifier" Background="Green" Content="Modifier" HorizontalAlignment="Left" Margin="41,296,0,0" VerticalAlignment="Top" Width="118" Click="Modifier_Click"/>
             <Label Content="Prénom" HorizontalAlignment="Left" Margin="20,32,0,0" VerticalAlignment="Top" Width="118"/>
             <TextBox x:Name="PrenomTxt" HorizontalAlignment="Left" Height="23" Margin="175,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <Label Content="Nom" HorizontalAlignment="Left" Margin="20,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
@@ -25,7 +25,6 @@
             <Label Content="Mot de passe" HorizontalAlignment="Left" Margin="331,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="132"/>
             <TextBox x:Name="MdpTxt" HorizontalAlignment="Left" Height="23" Margin="486,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <Label Content="Active" HorizontalAlignment="Left" Margin="331,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
-            <TextBox x:Name="ActiveTxt" HorizontalAlignment="Left" Height="23" Margin="486,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <Button Background="red" Content="Annuler" HorizontalAlignment="Left" Margin="272,296,0,0" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.998,-1.191" Click="Button_Click"/>
             <Grid Margin="652,34,110,192" >
                 <Grid.Background>
@@ -43,6 +42,9 @@
         Width="100" Grid.Column="1" Click="Parcourir_Click" >Parcourir</Button>
             </Grid>
             <TextBox x:Name="ImgPath" Height="23" Margin="0,0,68.6,126.6" TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120"/>
+            <ComboBox x:Name="Activecbx" HorizontalAlignment="Left" Margin="485,167,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Role" HorizontalAlignment="Left" Margin="245,220,0,0" VerticalAlignment="Top" Width="118"/>
+            <TextBox x:Name="RoleTxt" HorizontalAlignment="Left" Height="23" Margin="400,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         </Grid>
 
     </Grid>

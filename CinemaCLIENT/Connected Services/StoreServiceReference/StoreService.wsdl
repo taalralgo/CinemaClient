@@ -25,6 +25,18 @@
   <wsdl:message name="IStoreService_Find_OutputMessage">
     <wsdl:part name="parameters" element="tns:FindResponse" />
   </wsdl:message>
+  <wsdl:message name="IStoreService_Modifier_InputMessage">
+    <wsdl:part name="parameters" element="tns:Modifier" />
+  </wsdl:message>
+  <wsdl:message name="IStoreService_Modifier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStoreService_FindByAdresse_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindByAdresse" />
+  </wsdl:message>
+  <wsdl:message name="IStoreService_FindByAdresse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindByAdresseResponse" />
+  </wsdl:message>
   <wsdl:portType name="IStoreService">
     <wsdl:operation name="Add">
       <wsdl:input wsaw:Action="http://tempuri.org/IStoreService/Add" message="tns:IStoreService_Add_InputMessage" />
@@ -37,6 +49,14 @@
     <wsdl:operation name="Find">
       <wsdl:input wsaw:Action="http://tempuri.org/IStoreService/Find" message="tns:IStoreService_Find_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStoreService/FindResponse" message="tns:IStoreService_Find_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Modifier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStoreService/Modifier" message="tns:IStoreService_Modifier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStoreService/ModifierResponse" message="tns:IStoreService_Modifier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindByAdresse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStoreService/FindByAdresse" message="tns:IStoreService_FindByAdresse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStoreService/FindByAdresseResponse" message="tns:IStoreService_FindByAdresse_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IStoreService" type="tns:IStoreService">
@@ -61,6 +81,24 @@
     </wsdl:operation>
     <wsdl:operation name="Find">
       <soap:operation soapAction="http://tempuri.org/IStoreService/Find" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modifier">
+      <soap:operation soapAction="http://tempuri.org/IStoreService/Modifier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindByAdresse">
+      <soap:operation soapAction="http://tempuri.org/IStoreService/FindByAdresse" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

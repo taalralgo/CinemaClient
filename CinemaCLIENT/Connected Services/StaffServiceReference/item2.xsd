@@ -55,13 +55,56 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="Bloquer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" minOccurs="0" name="s" nillable="true" type="q6:Staff" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BloquerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BloquerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Debloquer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" minOccurs="0" name="s" nillable="true" type="q7:Staff" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DebloquerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DebloquerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" minOccurs="0" name="sch" nillable="true" type="q8:Staff" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" minOccurs="0" name="s" nillable="true" type="q9:Staff" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="Modifier">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="id" type="xs:int" />
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" minOccurs="0" name="adresse" nillable="true" type="q6:Adresse" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" minOccurs="0" name="adresse" nillable="true" type="q10:Adresse" />
         <xs:element minOccurs="0" name="photo" nillable="true" type="xs:base64Binary" />
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" minOccurs="0" name="store" nillable="true" type="q7:Store" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" minOccurs="0" name="store" nillable="true" type="q11:Store" />
         <xs:element minOccurs="0" name="etat" type="xs:boolean" />
         <xs:element minOccurs="0" name="nom" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="prenom" nillable="true" type="xs:string" />

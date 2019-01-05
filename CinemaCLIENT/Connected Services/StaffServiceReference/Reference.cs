@@ -1800,6 +1800,24 @@ namespace CinemaCLIENT.StaffServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/FindUser", ReplyAction="http://tempuri.org/IStaffServce/FindUserResponse")]
         System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff> FindUserAsync(string username);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Bloquer", ReplyAction="http://tempuri.org/IStaffServce/BloquerResponse")]
+        int Bloquer(CinemaCLIENT.StaffServiceReference.Staff s);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Bloquer", ReplyAction="http://tempuri.org/IStaffServce/BloquerResponse")]
+        System.Threading.Tasks.Task<int> BloquerAsync(CinemaCLIENT.StaffServiceReference.Staff s);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Debloquer", ReplyAction="http://tempuri.org/IStaffServce/DebloquerResponse")]
+        int Debloquer(CinemaCLIENT.StaffServiceReference.Staff s);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Debloquer", ReplyAction="http://tempuri.org/IStaffServce/DebloquerResponse")]
+        System.Threading.Tasks.Task<int> DebloquerAsync(CinemaCLIENT.StaffServiceReference.Staff s);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Update", ReplyAction="http://tempuri.org/IStaffServce/UpdateResponse")]
+        int Update(CinemaCLIENT.StaffServiceReference.Staff sch, CinemaCLIENT.StaffServiceReference.Staff s);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Update", ReplyAction="http://tempuri.org/IStaffServce/UpdateResponse")]
+        System.Threading.Tasks.Task<int> UpdateAsync(CinemaCLIENT.StaffServiceReference.Staff sch, CinemaCLIENT.StaffServiceReference.Staff s);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStaffServce/Modifier", ReplyAction="http://tempuri.org/IStaffServce/ModifierResponse")]
         int Modifier(int id, CinemaCLIENT.StaffServiceReference.Adresse adresse, byte[] photo, CinemaCLIENT.StaffServiceReference.Store store, bool etat, string nom, string prenom, string email, string username, string password, string role);
         
@@ -1864,6 +1882,30 @@ namespace CinemaCLIENT.StaffServiceReference {
         
         public System.Threading.Tasks.Task<CinemaCLIENT.StaffServiceReference.Staff> FindUserAsync(string username) {
             return base.Channel.FindUserAsync(username);
+        }
+        
+        public int Bloquer(CinemaCLIENT.StaffServiceReference.Staff s) {
+            return base.Channel.Bloquer(s);
+        }
+        
+        public System.Threading.Tasks.Task<int> BloquerAsync(CinemaCLIENT.StaffServiceReference.Staff s) {
+            return base.Channel.BloquerAsync(s);
+        }
+        
+        public int Debloquer(CinemaCLIENT.StaffServiceReference.Staff s) {
+            return base.Channel.Debloquer(s);
+        }
+        
+        public System.Threading.Tasks.Task<int> DebloquerAsync(CinemaCLIENT.StaffServiceReference.Staff s) {
+            return base.Channel.DebloquerAsync(s);
+        }
+        
+        public int Update(CinemaCLIENT.StaffServiceReference.Staff sch, CinemaCLIENT.StaffServiceReference.Staff s) {
+            return base.Channel.Update(sch, s);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateAsync(CinemaCLIENT.StaffServiceReference.Staff sch, CinemaCLIENT.StaffServiceReference.Staff s) {
+            return base.Channel.UpdateAsync(sch, s);
         }
         
         public int Modifier(int id, CinemaCLIENT.StaffServiceReference.Adresse adresse, byte[] photo, CinemaCLIENT.StaffServiceReference.Store store, bool etat, string nom, string prenom, string email, string username, string password, string role) {

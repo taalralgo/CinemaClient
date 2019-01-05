@@ -113,5 +113,10 @@ namespace CinemaCLIENT
                 MessageBox.Show("Verifiez si les valeurs numeriques sont bien renseignées et qu'elles sont valides");
             }
         }
+
+        private void AjouterCollection_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

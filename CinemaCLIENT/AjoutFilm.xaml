@@ -31,6 +31,11 @@
         <Label Content="Caracteristiques speciales" HorizontalAlignment="Left" Margin="331,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="150"/>
         <TextBox x:Name="CaracteristqueSpTxt" HorizontalAlignment="Left" Height="23" Margin="486,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Background="red" Content="Annuler" HorizontalAlignment="Left" Margin="196,395,0,0" VerticalAlignment="Top" Width="118" Click="Button_Click"/>
+        <Button Background="Blue" x:Name="AjouterActeur" Content="Collections" HorizontalAlignment="Left" Margin="585,418,0,0" VerticalAlignment="Top" Width="145" Click="AjouterCollection_Click"/>
+        <ComboBox x:Name="selectAct" HorizontalAlignment="Left" Margin="605,302,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="selectCat" HorizontalAlignment="Left" Margin="415,355,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Selection Categorie" HorizontalAlignment="Left" Margin="420,395,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
+        <Label Content="Selection acteur" HorizontalAlignment="Left" Margin="617,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.119" Width="118"/>
 
 
     </Grid>

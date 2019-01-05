@@ -31,6 +31,24 @@
   <wsdl:message name="IStaffServce_FindUser_OutputMessage">
     <wsdl:part name="parameters" element="tns:FindUserResponse" />
   </wsdl:message>
+  <wsdl:message name="IStaffServce_Bloquer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Bloquer" />
+  </wsdl:message>
+  <wsdl:message name="IStaffServce_Bloquer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BloquerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStaffServce_Debloquer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Debloquer" />
+  </wsdl:message>
+  <wsdl:message name="IStaffServce_Debloquer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DebloquerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStaffServce_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="IStaffServce_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
   <wsdl:message name="IStaffServce_Modifier_InputMessage">
     <wsdl:part name="parameters" element="tns:Modifier" />
   </wsdl:message>
@@ -53,6 +71,18 @@
     <wsdl:operation name="FindUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IStaffServce/FindUser" message="tns:IStaffServce_FindUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStaffServce/FindUserResponse" message="tns:IStaffServce_FindUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Bloquer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStaffServce/Bloquer" message="tns:IStaffServce_Bloquer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStaffServce/BloquerResponse" message="tns:IStaffServce_Bloquer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Debloquer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStaffServce/Debloquer" message="tns:IStaffServce_Debloquer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStaffServce/DebloquerResponse" message="tns:IStaffServce_Debloquer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStaffServce/Update" message="tns:IStaffServce_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStaffServce/UpdateResponse" message="tns:IStaffServce_Update_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Modifier">
       <wsdl:input wsaw:Action="http://tempuri.org/IStaffServce/Modifier" message="tns:IStaffServce_Modifier_InputMessage" />
@@ -90,6 +120,33 @@
     </wsdl:operation>
     <wsdl:operation name="FindUser">
       <soap:operation soapAction="http://tempuri.org/IStaffServce/FindUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Bloquer">
+      <soap:operation soapAction="http://tempuri.org/IStaffServce/Bloquer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Debloquer">
+      <soap:operation soapAction="http://tempuri.org/IStaffServce/Debloquer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap:operation soapAction="http://tempuri.org/IStaffServce/Update" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

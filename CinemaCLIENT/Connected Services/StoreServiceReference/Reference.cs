@@ -1793,6 +1793,18 @@ namespace CinemaCLIENT.StoreServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStoreService/Find", ReplyAction="http://tempuri.org/IStoreService/FindResponse")]
         System.Threading.Tasks.Task<CinemaCLIENT.StoreServiceReference.Store> FindAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStoreService/Modifier", ReplyAction="http://tempuri.org/IStoreService/ModifierResponse")]
+        int Modifier(int idAdresse, int idnouveauAdresse);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStoreService/Modifier", ReplyAction="http://tempuri.org/IStoreService/ModifierResponse")]
+        System.Threading.Tasks.Task<int> ModifierAsync(int idAdresse, int idnouveauAdresse);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStoreService/FindByAdresse", ReplyAction="http://tempuri.org/IStoreService/FindByAdresseResponse")]
+        CinemaCLIENT.StoreServiceReference.Store FindByAdresse(int idAdresse);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStoreService/FindByAdresse", ReplyAction="http://tempuri.org/IStoreService/FindByAdresseResponse")]
+        System.Threading.Tasks.Task<CinemaCLIENT.StoreServiceReference.Store> FindByAdresseAsync(int idAdresse);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1844,6 +1856,22 @@ namespace CinemaCLIENT.StoreServiceReference {
         
         public System.Threading.Tasks.Task<CinemaCLIENT.StoreServiceReference.Store> FindAsync(int id) {
             return base.Channel.FindAsync(id);
+        }
+        
+        public int Modifier(int idAdresse, int idnouveauAdresse) {
+            return base.Channel.Modifier(idAdresse, idnouveauAdresse);
+        }
+        
+        public System.Threading.Tasks.Task<int> ModifierAsync(int idAdresse, int idnouveauAdresse) {
+            return base.Channel.ModifierAsync(idAdresse, idnouveauAdresse);
+        }
+        
+        public CinemaCLIENT.StoreServiceReference.Store FindByAdresse(int idAdresse) {
+            return base.Channel.FindByAdresse(idAdresse);
+        }
+        
+        public System.Threading.Tasks.Task<CinemaCLIENT.StoreServiceReference.Store> FindByAdresseAsync(int idAdresse) {
+            return base.Channel.FindByAdresseAsync(idAdresse);
         }
     }
 }

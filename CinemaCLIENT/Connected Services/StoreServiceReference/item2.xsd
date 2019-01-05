@@ -41,4 +41,33 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="Modifier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idAdresse" type="xs:int" />
+        <xs:element minOccurs="0" name="idnouveauAdresse" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifierResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindByAdresse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idAdresse" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindByAdresseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/FilmLibrary.Les_Modeles" minOccurs="0" name="FindByAdresseResult" nillable="true" type="q5:Store" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

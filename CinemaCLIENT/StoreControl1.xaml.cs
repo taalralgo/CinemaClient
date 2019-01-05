@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaCLIENT.StoreServiceReference;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace CinemaCLIENT
     /// </summary>
     public partial class StoreControl1 : UserControl
     {
+        StoreServiceClient storeClient = new StoreServiceClient();
         public StoreControl1()
         {
             InitializeComponent();
+            tableau.ItemsSource = storeClient.FindAll();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

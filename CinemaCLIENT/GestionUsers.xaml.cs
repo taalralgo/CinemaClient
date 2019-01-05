@@ -50,8 +50,35 @@ namespace CinemaCLIENT
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            updateUser up = new updateUser();
+            Staff s = (Staff)tableau.SelectedItem;
+            updateUser up = new updateUser(s);
             up.Show();
+        }
+
+        private void Bloquer_Click(object sender, RoutedEventArgs e)
+        {
+            Staff staff = (Staff)tableau.SelectedItem;
+            if(staff != null)
+            {
+                int n = StaffClient.Bloquer(staff);
+                if (n > 0)
+                    MessageBox.Show("User bloqué");
+                else
+                    MessageBox.Show("User est deja bloqué");
+            }
+        }
+
+        private void Debloquer_Click(object sender, RoutedEventArgs e)
+        {
+            Staff staff = (Staff)tableau.SelectedItem;
+            if (staff != null)
+            {
+                int n = StaffClient.Debloquer(staff);
+                if (n > 0)
+                    MessageBox.Show("User debloqué");
+                else
+                    MessageBox.Show("User est deja actif");
+            }
         }
     }
 }
